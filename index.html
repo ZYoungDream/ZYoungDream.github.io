@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>赵洋俊 · 导演 / 剪辑 / AI 影像</title>
+<meta name="description" content="赵洋俊 — 导演、剪辑、AI 影像。剧情片、纪录片、宣传片与 AI 影像作品集。">
+<meta property="og:title" content="赵洋俊 · 导演 / 剪辑 / AI 影像">
+<meta property="og:description" content="剧情片、纪录片、宣传片与 AI 影像作品集。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" as="image" href="assets/video/hero/xue-ji.jpg" fetchpriority="high">
+<script>
+  /* 标记脚本可用；2.5 秒内没收到就绪信号就恢复全部内容显示，避免空白页 */
+  document.documentElement.classList.add("js");
+  setTimeout(function () {
+    if (!window.__pfReady) document.documentElement.classList.remove("js");
+  }, 2500);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0C'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='17' font-weight='700' fill='%23F0EEE9' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ======================= 页头 ======================= -->
+<header class="site-header">
+  <a class="brand" href="index.html" data-brand>赵洋俊<span>Zhao Yangjun</span></a>
+
+  <nav class="nav" aria-label="主导航">
+    <a href="#works" data-zh="作品" data-en="Work">作品</a>
+    <a href="#about" data-zh="关于" data-en="About">关于</a>
+    <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+  </nav>
+
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang-btn="zh" aria-pressed="true">中</button>
+    <i aria-hidden="true"></i>
+    <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+  <!-- ======================= Hero ======================= -->
+  <section class="hero">
+    <video class="hero__video" muted loop playsinline preload="none"
+           poster="assets/video/hero/xue-ji.jpg"
+           data-src="assets/video/hero/xue-ji.mp4"></video>
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div>
+        <p class="hero__kicker" data-hero-eyebrow>剧情 · 纪录片 · 宣传片 · AI 影像</p>
+        <h1 class="hero__title" data-hero-title>赵洋俊</h1>
+      </div>
+
+      <div class="hero__right">
+        <p class="hero__statement" data-hero-statement>纪录片出身，拍过剧情，也在用 AI 重新做影像的生产方式。关心的始终是具体的人，和具体处境里的选择。</p>
+        <dl class="hero__meta" data-hero-meta></dl>
+      </div>
+    </div>
+
+    <span class="hero__cue" aria-hidden="true">SCROLL</span>
+  </section>
+
+  <!-- ======================= 作品 ======================= -->
+  <section class="section" id="works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-head__title">
+          <span data-zh="作品选" data-en="Selected Works">作品选</span>
+          <small>Selected Works</small>
+        </h2>
+        <span class="section-head__count" data-works-count></span>
+      </div>
+
+      <div class="filters reveal" data-filters role="tablist" aria-label="作品分类"></div>
+
+      <div data-works></div>
+
+      <noscript>
+        <p style="font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--dim);padding:24px 0">
+          作品列表需要 JavaScript 才能加载。请直接用浏览器打开 index.html，或允许此页面运行脚本。
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ======================= 关于 ======================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-head__title">
+          <span data-zh="关于" data-en="About">关于</span>
+          <small>About</small>
+        </h2>
+      </div>
+
+      <div class="about">
+        <div class="about__side reveal">
+          <span class="label" data-zh="简介" data-en="Profile">简介</span>
+          <span class="about__side-mark" aria-hidden="true">Z.</span>
+        </div>
+
+        <div class="about__main">
+          <div class="about__bio reveal" data-about-bio></div>
+        </div>
+
+        <div class="about__cols reveal" data-about-stack></div>
+      </div>
+
+      <!-- 经历时间线 -->
+      <div class="cv">
+        <div class="cv__head reveal">
+          <span class="label" data-zh="经历" data-en="CV">经历</span>
+          <span class="cv__title" data-zh="教育 · 实习 · 服役" data-en="Education · Experience · Service">教育 · 实习 · 服役</span>
+        </div>
+        <ol class="cv__list reveal" data-cv></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 联系 ======================= -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-head__title">
+          <span data-zh="联系" data-en="Contact">联系</span>
+          <small>Contact</small>
+        </h2>
+      </div>
+
+      <p class="contact__lead reveal" data-contact-lead></p>
+      <a class="contact__mail reveal" data-contact-mail href="#" style="transition-delay:80ms"></a>
+
+      <div class="contact__grid reveal" data-contact-cols></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span data-year></span> <span data-zh="赵洋俊 保留所有权利" data-en="Zhao Yangjun. All rights reserved.">赵洋俊 保留所有权利</span></p>
+  <p data-zh="站内为压缩预览，部分作品为节选" data-en="Compressed previews; some titles are excerpts">站内为压缩预览，部分作品为节选</p>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/works.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

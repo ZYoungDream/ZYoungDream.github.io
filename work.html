@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作品 · 赵洋俊</title>
+<meta name="description" content="赵洋俊作品详情 — 导演、剪辑、AI 影像。">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  document.documentElement.classList.add("js");
+  setTimeout(function () {
+    if (!window.__pfReady) document.documentElement.classList.remove("js");
+  }, 2500);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0C'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='17' font-weight='700' fill='%23F0EEE9' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html" data-brand>赵洋俊<span>Zhao Yangjun</span></a>
+
+  <nav class="nav" aria-label="主导航">
+    <a href="index.html#works" data-zh="作品" data-en="Work">作品</a>
+    <a href="index.html#about" data-zh="关于" data-en="About">关于</a>
+    <a href="index.html#contact" data-zh="联系" data-en="Contact">联系</a>
+  </nav>
+
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang-btn="zh" aria-pressed="true">中</button>
+    <i aria-hidden="true"></i>
+    <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main class="work-page">
+
+  <!-- 顶部：返回 + 序号 -->
+  <div class="wrap">
+    <div class="work-top">
+      <a class="back-link" href="index.html#works">
+        <span aria-hidden="true">←</span>
+        <span data-zh="全部作品" data-en="All work">全部作品</span>
+      </a>
+      <span class="label" data-work-cat></span>
+    </div>
+  </div>
+
+  <!-- 标题区 -->
+  <div class="wrap">
+    <div class="work-head reveal">
+      <div class="work-head__main">
+        <span class="work-head__index" data-work-index></span>
+        <h1 class="work-head__title" data-work-title></h1>
+        <p class="work-head__sub" data-work-sub></p>
+      </div>
+      <dl class="work-head__meta" data-work-meta></dl>
+    </div>
+  </div>
+
+  <!-- 满幅播放器 -->
+  <div class="work-hero" data-player></div>
+
+  <div class="wrap">
+    <p class="excerpt-note" data-excerpt-note hidden></p>
+
+    <div class="work-body">
+      <div class="work-body__synopsis reveal">
+        <span class="label" data-synopsis-label></span>
+        <div data-synopsis style="margin-top:18px"></div>
+      </div>
+
+      <div class="work-body__credits reveal" style="transition-delay:80ms">
+        <span class="label" data-credits-label></span>
+        <dl class="credits-list" data-credits style="margin-top:18px"></dl>
+        <a class="watch-btn" data-watch href="#" hidden>
+          <span aria-hidden="true">▶</span>
+          <span data-zh="观看全片" data-en="Watch full film">观看全片</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 剧照 -->
+  <div class="stills" data-stills></div>
+
+  <!-- 上下篇 -->
+  <div class="wrap">
+    <nav class="pager" data-pager aria-label="作品导航"></nav>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span data-year></span> <span data-zh="赵洋俊 保留所有权利" data-en="Zhao Yangjun. All rights reserved.">赵洋俊 保留所有权利</span></p>
+  <p data-zh="站内为压缩预览，部分作品为节选" data-en="Compressed previews; some titles are excerpts">站内为压缩预览，部分作品为节选</p>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/works.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/work.js"></script>
+</body>
+</html>
